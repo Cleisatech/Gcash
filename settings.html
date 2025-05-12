@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - GCash</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Header -->
+    <header class="gcash-header">
+      <div class="gcash-logo">
+        <div class="gcash-logo-icon">G</div>
+        <div class="gcash-greeting">Settings</div>
+      </div>
+      <div class="profile-icon" id="back-btn">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="gcash-content">
+      <div class="settings-options">
+        <div class="settings-option" id="verification-btn">
+          <i class="fas fa-user-check option-icon"></i>
+          <div class="option-text">
+            <h3>Verification</h3>
+            <p>Verify your account to unlock more features.</p>
+          </div>
+        </div>
+        <div class="settings-option" id="change-password-btn">
+          <i class="fas fa-lock option-icon"></i>
+          <div class="option-text">
+            <h3>Change Password</h3>
+            <p>Update your account password for security.</p>
+          </div>
+        </div>
+        <div class="settings-option" id="notifications-btn">
+          <i class="fas fa-bell option-icon"></i>
+          <div class="option-text">
+            <h3>Notifications</h3>
+            <p>Manage your notification preferences.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-item" id="nav-home">
+        <i class="fas fa-home"></i>
+        <div class="nav-text">Home</div>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-envelope"></i>
+        <div class="nav-text">Inbox</div>
+      </div>
+      <div class="nav-item">
+        <div class="qr-button">
+          <i class="fas fa-qrcode"></i>
+        </div>
+        <div class="nav-text">QR</div>
+      </div>
+      <div class="nav-item" id="nav-transactions">
+        <i class="fas fa-history"></i>
+        <div class="nav-text">Transactions</div>
+      </div>
+      <div class="nav-item active">
+        <i class="fas fa-cog"></i>
+        <div class="nav-text">Settings</div>
+      </div>
+    </div>
+
+    <!-- Coming Soon Modal -->
+    <div class="modal" id="coming-soon-modal">
+      <div class="modal-content">
+        <div class="modal-title">Coming Soon!</div>
+        <div class="modal-message">This feature is currently under development and will be available soon.</div>
+        <button type="button" class="form-button" id="close-modal-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/settings.js"></script>
+</body>
+</html>
