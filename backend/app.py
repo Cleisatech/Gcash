@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template  # Import render_template
 from flask_cors import CORS  # Import Flask-CORS
 import sqlite3
 import logging
@@ -139,7 +139,7 @@ def delete_user():
 
 @app.route('/')
 def home():
-    return "Welcome to the GCash Clone API!"
+    return render_template('index.html')  # Serve the index.html file
 
 @app.route('/test')
 def test():
