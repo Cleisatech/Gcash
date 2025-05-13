@@ -145,5 +145,9 @@ def home():
 def test():
     return "App is working!"
 
+@app.route('/debug')
+def debug():
+    return render_template('index.html')  # Test rendering index.html
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=7860, debug=True)
